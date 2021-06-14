@@ -9,7 +9,7 @@ body {
 }
 
 .buffer-bottom {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .client {
@@ -32,4 +32,15 @@ body {
   position: relative;
   z-index: 1;
   overflow: hidden;
+}
+
+.heading {
+  font-weight: 900;
+}
+
+.section-divider {
+  background-color: #d8b505;
+  border: 2px solid #d8b505;
+  opacity: 1;
+  margin: 50px 0;
 }
