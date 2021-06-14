@@ -1,0 +1,29 @@
+.quote-author {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.home-grid {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  align-items: center;
+}
+
+footer {
+  background-color: #d3b53c;
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+}
+
+
+
+/* Work page CSS */
+
+/* heroimage/bootstrap */
+.img-fluid{
+  height: 60rem;
+}

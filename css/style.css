@@ -1,0 +1,819 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+/* ----------------- body includes css found on all or most pages-----------------  */
+body {
+  padding-top: 5px;
+  margin: 0px;
+}
+
+h1 {
+  /* text-align: center;
+  text-decoration: none;
+  font-weight: 100; */
+  /* TODO: CHECK HOW THIS  H`1 LOOKS WITH NO CSS */
+}
+
+h2 {
+   text-align: center;
+  padding-top: 90px;
+}
+
+
+h3{
+
+}
+
+h4 {
+  padding: 0px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+.role {
+  padding: 30px;
+  font-weight: 500;
+}
+
+.client {
+  background-image: linear-gradient(
+    to right,
+    white,
+    hsla(50, 96%, 43%, 1),
+    white
+  );
+  /* background-color: hsla(50, 96%, 43%, 1); */
+}
+
+/* clear card */
+.wordbackground {
+  background-color: white;
+  padding: 40px;
+  width: 37rem;
+  height: 14rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+/* card for care page */
+.wordbackground3 {
+  background-color: white;
+  padding: 40px;
+  width: 37rem;
+  height: 20rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.problem {
+  width: 50rem;
+}
+ul {
+  justify-content: center;
+}
+.unorderlist li {
+  list-style-type: circle;
+}
+img {
+  width: 100vw;
+}
+.researchhero {
+  height: auto;
+  width: 70rem;
+  overflow: hidden;
+}
+.features {
+  background-color: white;
+  padding: 40px;
+  width: 37rem;
+  height: 14rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.featureimages {
+  /* width: 30rem; */
+  width: 260px;
+  height: 500px;
+}
+.featuretext {
+  flex-basis: 30px;
+  justify-content: left;
+  text-align: left;
+}
+/* prototype paragraph */
+.p50rem {
+  width: 50rem;
+}
+.pagination {
+  display: inline-block;
+  align-items: center;
+  padding-left: 45vw;
+  padding-bottom: 50px;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: black;
+  top: 50%;
+  left: 50%;
+  width: 30rem;
+  height: 15rem;
+  border-radius: 5px;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  font-size: 40px;
+  width: 100vw;
+  font-weight: 500;
+  padding-top: 0px;
+}
+.hero-text:before {
+  content: '';
+  position: absolute;
+  /* background: inherit; */
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  /* filter: blur(20px); */
+  margin: -20px;
+  background-color: white;
+}
+.hero-image {
+  width: 100%;
+  display: block;
+}
+
+
+
+
+
+
+/* ----------------- buttons----------------- */
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+/* container for button */
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* background-color: #FFF; */
+  padding: 40px 0px;
+}
+.btn {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.btn:hover {
+  text-decoration: none;
+}
+/*btn_background*/
+.effect04 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #000;
+  /* outline: solid  2px #000; */
+  background: #d9b404ff;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+.effect04::before,
+.effect04 span {
+  margin: 0 auto;
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-duration: 0.4s;
+}
+.effect04:hover {
+  background-color: #436387;
+}
+.effect04:hover span {
+  -webkit-transform: translateY(-400%) scale(-0.1, 20);
+  transform: translateY(-400%) scale(-0.1, 20);
+}
+.effect04::before {
+  content: attr(data-sm-link-text);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1, 20);
+  transform: translateY(500%) scale(-0.1, 20);
+}
+.effect04:hover::before {
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1, 1);
+  transform: translateY(0) scale(1, 1);
+}
+
+
+
+
+
+
+
+/*----------------- Style the header----------------- */
+header {
+  padding: 0px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/*----------------- Home page----------------- */
+.quote-author {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.home-grid {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  align-items: center;
+}
+
+/* TODO is this necessary? */
+.selfimage {
+  width: 100%;
+}
+/* virtical without gradient */
+.scrolldown {
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 400px;
+  background: #d8b505;
+  text-align: center;
+}
+/* virtical with gradient */
+.scrolldownT {
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 400px;
+  background: linear-gradient(#d8b505, #47668d);
+
+}
+/* lines sepratign sections */
+.line {
+  width: 500px;
+  margin: auto;
+  height: 10px;
+  background: #d8b505;
+  text-align: center;
+  padding: 10px;
+}
+hr{
+  width: 800px;
+  margin:  10px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------- Work page----------------- */
+/*thumbsup emoji*/
+.thumbsup {
+  font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------- nav bar/links----------------- */
+nav {
+  height: auto;
+  width: 100%;
+  /* z-index: 7; */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* background-image: linear-gradient(to right, #4f6d9bff , #d9b404ff); */
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: black;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-size: 20px;
+}
+.active,
+a:hover {
+  color: #5e60a0;
+  text-decoration-line: underline;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+#navbar {
+  /* background-color: #D3B53C; */
+  transition: background-color 200ms linear;
+  /* overflow: hidden; */
+}
+/* TODO what are these values and properties below for? th */
+/* a {
+  color: black;
+  font-size: 20px;
+} */
+/* a:hover {
+  color: #73d0ec;
+} */
+  /* TODO what color is this? */
+.logo {
+  color: black;
+  padding: 0 100px;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 10px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------- safeguard css----------------- */
+.clientsafe {
+  background-image: linear-gradient(to right, white, rgb(0, 195, 177), white);
+}
+.persona {
+  width: 50%;
+  height: auto;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+.slideimages {
+  height: 20rem;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mySlides {
+  display: none;
+}
+.slideshowtitle {
+  text-align: center;
+}
+
+
+/* TODO maybe get rid of this and put the iamge straigth up in the html? */
+.hero-image-safeguard {
+  background-image: url('https://lh3.googleusercontent.com/Qt9jsRq1oUxbva1UVhQrb72Xo1DK6WfoFsDuxu9KWa8PelfYD5EfN3AR-wnpgOwJ5q3zYz23-tFidvOjoPX7t48CHUcW1owd8Y2KKGFZ3D21qvabSDT-LqlnlhhgTrBLrD0OCnYNWbQ=w2400');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.jumbotron1 {
+  background-image: url("../img/HERO.IMAGE.png");
+  background-size: cover;
+  height: 100%;
+}
+.lead{
+  text-align:center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------- care----------------- */
+.clientcare {
+  background-image: linear-gradient(to right, white, rgb(83, 90, 154), white);
+}
+.slideimages2 {
+  height: 30rem;
+  width: auto;
+  padding-bottom: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* TODO maybe get rid of this and put the iamge straigth up in the html? */
+.hero-image-care {
+  background-image: url('https://lh3.googleusercontent.com/gcrOfGgz6tX_aLnir55IiOWg-1D3G-518mqqnes5SEt9UphhLUs5XAVEH1MbkpFDQm_Zr4kwXLJGx1A64-pvFYxn63id91gJil8gyM5JWCzQKexX9LAdqBRBlkgac1dPry0D5bbsSbI=w2400');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+/*----------------- Inturo----------------- */
+.APPLOGO {
+  width: 200px;
+  height: auto;
+  padding-top: 10px;
+  margin-left: 45%;
+  padding-bottom: 0px;
+}
+/* TODO maybe get rid of this and put the iamge straigth up in the html? */
+.hero-image-Inturo {
+  background-image: url('https://lh3.googleusercontent.com/lzktWEhsMwaPZKDvHS9KWh-PgOy04ioey2Hz9istPfMx3JtIqst2IY8cgiTFXMshxCdflxwsU6fflUPh2vMHAvxOoJRwSp7OdludIztqf9IvfLqETHH7Lmj4YP77Q2N9fcFqAsCsc4Y=w2400');
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+/*----------------- grid/flex contaiers----------------- */
+.flex-container {
+  display: flex;
+  width: 100vw;
+  align-items: flex-start;
+  padding: 60px 60px;
+  gap: 20px;
+  text-align: left;
+  align-items: center;
+}
+/* .flex-container {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  align-items: center;
+} */
+.flex-container2 {
+  display: flex;
+  width: 90vw;
+  align-items: center;
+  grid-gap: 2%;
+}
+.flex-paragraph {
+  text-align: left;
+  width: 30rem;
+}
+.flex-item {
+  padding: 5px;
+}
+.imageflex {
+  width: 50vw;
+}
+.imageflexlrg {
+  width: 100vw;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+/*----------------- footer----------------- */
+footer {
+  background-color: #d3b53c;
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----Media Queries-----------  */
+
+/*--small---*/
+@media only screen and (max-width: 800px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  html {
+  }
+  body {
+    padding: 20px;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    /* width: 50rem; */
+  }
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+
+  h4 {
+    padding: 0px;
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  header {
+    padding: 0px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+  }
+
+  /* flex */
+
+  .flex-container {
+    display: block;
+    width: 100vw;
+    /* align-items: ; */
+    padding: 8px;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 100;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .flex-container2 {
+    display: block;
+    width: 90vw;
+    align-items: center;
+    grid-gap: 2%;
+  }
+  .selfimage {
+    width: 100%;
+  }
+
+  .flex-paragraph {
+    text-align: center;
+    width: 100vw;
+    padding: 8px;
+  }
+
+  .flex-item {
+    padding: 8px;
+  }
+
+  .imageflex {
+    width: 100vw;
+  }
+
+  .imageflexlrg {
+    width: 100vw;
+    height: auto;
+  }
+
+  .researchhero {
+    height: auto;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  /* paragraph */
+  .p50rem {
+    width: 100vw;
+  }
+  .wordbackground {
+    background-color: white;
+    padding: 40px;
+    width: 100vw;
+    height: auto;
+    box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  h3 {
+    padding: 5px;
+  }
+  h2 {
+    padding: 5px;
+  }
+  .featurelist {
+    display: none;
+  }
+
+  /* Next steps */
+
+  .Nextsteps {
+    display: none;
+  }
+
+  /*app logo */
+
+  .APPLOGO {
+    display: none;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+  /* line */
+
+  .line {
+    transform: translate(-20%, -20%);
+    width: 100vw;
+    margin: auto;
+    height: 10px;
+    background: #d8b505;
+    text-align: center;
+    display: none;
+  }
+
+  /* nav */
+
+  .checkbtn {
+    display: block;
+    font-size: 30px;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #900000;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 16px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0000ff;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    line-height: 4rem;
+  }
+}

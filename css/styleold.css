@@ -1,0 +1,889 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: black;
+  font-size: 20px;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  /* width: 50rem; */
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+h4 {
+  padding: 0px;
+}
+a:hover {
+  color: #73d0ec;
+}
+
+/* Style the header */
+header {
+  padding: 0px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* --body---- */
+body {
+  padding-top: 5px;
+  margin: 0px;
+}
+
+.logo {
+  width: 150px;
+}
+
+label {
+  height: 100%;
+  width: auto;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.below {
+  padding-top: 90px;
+}
+
+/*---flex----*/
+
+.flex-container {
+  display: flex;
+  width: 100vw;
+  align-items: flex-start;
+  padding: 60px 60px;
+  gap: 20px;
+  text-align: left;
+  align-items: center;
+}
+h2 {
+  text-align: center;
+}
+
+.flex-container2 {
+  display: flex;
+  width: 90vw;
+  align-items: center;
+  grid-gap: 2%;
+}
+.selfimage {
+  width: 100%;
+}
+
+.flex-paragraph {
+  text-align: left;
+  width: 30rem;
+}
+
+.flex-item {
+  padding: 5px;
+}
+
+.imageflex {
+  width: 50vw;
+}
+
+.bulliesandbyimage {
+  width: 50rem;
+  height: auto;
+  padding-left: 100px;
+}
+
+.imageflexlrg {
+  width: 100vw;
+  height: auto;
+}
+
+/* --nav bar----- */
+
+nav {
+  height: auto;
+  width: 100%;
+  /* z-index: 7; */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* background-image: linear-gradient(to right, #4f6d9bff , #d9b404ff); */
+}
+
+.logo {
+  color: black;
+  padding: 0 100px;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+#navbar {
+  /* background-color: #D3B53C; */
+  transition: background-color 200ms linear;
+  /* overflow: hidden; */
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+/* nav ul {
+  float: right;
+  margin-right: 3%;
+  transition: 1s;
+} */
+/* overflow: hidden; */
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: black;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+.active,
+a:hover {
+  color: #5e60a0;
+  text-decoration-line: underline;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* ---title------ */
+
+.worktitle {
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+}
+
+/* scroll line animaiton */
+
+.scrolldown {
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 400px;
+  background: #d8b505;
+  margin: auto;
+  height: 10px;
+  text-align: center;
+  padding: 50%;
+
+}
+
+.scrolldownT {
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 400px;
+  background: linear-gradient(#d8b505, #47668d);
+}
+
+.scrolldown:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#d8b505, #fff);
+}
+
+/* ---line---- */
+
+.line {
+  transform: translate(-50%, -50%);
+  width: 500px;
+  margin: auto;
+  height: 10px;
+  background: #d8b505;
+  text-align: center;
+}
+
+/*----- Sections--- */
+.role {
+  padding: 30px;
+  font-weight: 500;
+}
+
+.client {
+  background-image: linear-gradient(
+    to right,
+    white,
+    hsla(50, 96%, 43%, 1),
+    white
+  );
+  /* background-color: hsla(50, 96%, 43%, 1); */
+  font-size: 600px;
+}
+.clientsafe {
+  background-image: linear-gradient(to right, white, rgb(0, 195, 177), white);
+}
+
+.clientcare {
+  background-image: linear-gradient(to right, white, rgb(83, 90, 154), white);
+}
+
+.active {
+  background-color: #4f6d9bff;
+  color: white;
+  border-radius: 50%;
+}
+.APPLOGO {
+  width: 200px;
+  height: auto;
+  padding-top: 10px;
+  margin-left: 45%;
+  padding-bottom: 0px;
+}
+
+.wordbackground {
+  background-color: white;
+  padding: 40px;
+  width: 37rem;
+  height: 14rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* in old file only */
+.wordbackground2 {
+  background-color: white;
+  padding: 40px;
+  width: 37rem;
+  height: 16rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.wordbackground3 {
+  background-color: white;
+  padding: 40px;
+  width: 37rem;
+  height: 20rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* .featureglass{
+  background-color: white;
+  padding: 40px;
+  width: 100px;
+	height: 14rem;
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+	border-radius: 5px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+
+}
+*/
+
+.problem {
+  width: 50rem;
+}
+.unorderlist li {
+  list-style-type: circle;
+}
+
+img {
+  width: 100vw;
+}
+
+.inlineimg {
+  display: inline;
+  width: 30rem;
+}
+ul {
+  justify-content: center;
+}
+
+.researchhero {
+  height: auto;
+  width: 70rem;
+  overflow: hidden;
+}
+
+.features {
+  background-color: white;
+  padding: 40px;
+  width: 37rem;
+  height: 14rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.featureimages {
+  /* width: 30rem; */
+  width: 260px;
+  height: 500px;
+}
+.featuretext {
+  flex-basis: 30px;
+  justify-content: left;
+  text-align: left;
+}
+
+.p50rem {
+  width: 50rem;
+}
+
+.persona {
+  width: 50%;
+  height: auto;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.pagination {
+  display: inline-block;
+  align-items: center;
+  padding-left: 45vw;
+  padding-bottom: 50px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.slideimages {
+  height: 20rem;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slideimages2 {
+  height: 30rem;
+  width: auto;
+  padding-bottom: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.slideshowtitle {
+  text-align: center;
+}
+
+/* ---Hero images-- */
+.hero-text {
+  text-align: center;
+  position: relative;
+  /* top: 50%;
+  left: 50%; */
+  width: 30rem;
+  height: 15rem;
+  border-radius: 5px;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  font-size: 40px;
+  width: 100vw;
+  font-weight: 500;
+  padding-top: 0px;
+}
+
+.hero-text:before {
+  content: '';
+  position: absolute;
+  /* background: inherit; */
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  /* filter: blur(20px); */
+  margin: -20px;
+  background-color: white;
+}
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+
+  /* Set a specific height */
+  /* height: 50%; */
+  width: 100%;
+  display: block;
+  /* Position and center the image to scale nicely on all screens */
+  /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; */
+}
+.hero-image-safeguard {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url('https://lh3.googleusercontent.com/Qt9jsRq1oUxbva1UVhQrb72Xo1DK6WfoFsDuxu9KWa8PelfYD5EfN3AR-wnpgOwJ5q3zYz23-tFidvOjoPX7t48CHUcW1owd8Y2KKGFZ3D21qvabSDT-LqlnlhhgTrBLrD0OCnYNWbQ=w2400');
+  /*  */
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-image-Inturo {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url('https://lh3.googleusercontent.com/lzktWEhsMwaPZKDvHS9KWh-PgOy04ioey2Hz9istPfMx3JtIqst2IY8cgiTFXMshxCdflxwsU6fflUPh2vMHAvxOoJRwSp7OdludIztqf9IvfLqETHH7Lmj4YP77Q2N9fcFqAsCsc4Y=w2400');
+
+  /* Set a specific height */
+  height: 70%;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-image-Bullies {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url('https://lh3.googleusercontent.com/tD5bgvkEAFguF8CZyi8Fvl26CFIYiMbTKyK456z9iecCOeo4dVQn0DPD5YQ1Rn9eVKTwWlrUE0ovCJyS5akWsMkwqkcrKKGc_c6icj8eUJEzws-PUSqsn1O_ILe1aZvyXaGOzH_fg7o=w2400');
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-image-care {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url('https://lh3.googleusercontent.com/gcrOfGgz6tX_aLnir55IiOWg-1D3G-518mqqnes5SEt9UphhLUs5XAVEH1MbkpFDQm_Zr4kwXLJGx1A64-pvFYxn63id91gJil8gyM5JWCzQKexX9LAdqBRBlkgac1dPry0D5bbsSbI=w2400');
+  /*  */
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-image-VR {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url('https://lh3.googleusercontent.com/TnzeXinL4i9TvW6yuzne-xV236y6r68AT9jDig__GgwtYwiKgWOuRXU9V7CHBX-xkv5LF-fpnHUf55_f-IbR48v_Cao2F9-fr0t40Ka_iBhAFerIGICeByZzSHigd7pSCQAuacpujh4=w2400');
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+/* -----buttons------ */
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  /*   padding: 2em 0em; */
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* background-color: #FFF; */
+  padding: 40px 0px;
+  width: 240px;
+}
+
+.btn {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+/*btn_background*/
+.effect04 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #000;
+  /* outline: solid  2px #000; */
+  background: #d9b404ff;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+.effect04::before,
+.effect04 span {
+  margin: 0 auto;
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-duration: 0.4s;
+}
+
+.effect04:hover {
+  background-color: #436387;
+}
+
+.effect04:hover span {
+  -webkit-transform: translateY(-400%) scale(-0.1, 20);
+  transform: translateY(-400%) scale(-0.1, 20);
+}
+
+.effect04::before {
+  content: attr(data-sm-link-text);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1, 20);
+  transform: translateY(500%) scale(-0.1, 20);
+}
+
+.effect04:hover::before {
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1, 1);
+  transform: translateY(0) scale(1, 1);
+}
+
+/* --thumbsup emoji---- */
+
+.thumbsup {
+  font-size: 50px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #d3b53c;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  width: 100vw;
+}
+
+nav {
+  list-style-type: none;
+  padding: 0;
+}
+p {
+  text-align: center;
+}
+
+/*-----Media Queries-----------  */
+
+/*--small---*/
+@media only screen and (max-width: 800px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+  }
+
+  html {
+  }
+  body {
+    padding: 20px;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    /* width: 50rem; */
+  }
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+
+  h4 {
+    padding: 0px;
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  header {
+    padding: 0px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+  }
+
+  /* flex */
+
+  .flex-container {
+    display: block;
+    width: 100vw;
+    /* align-items: ; */
+    padding: 8px;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 100;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .flex-container2 {
+    display: block;
+    width: 90vw;
+    align-items: center;
+    grid-gap: 2%;
+  }
+  .selfimage {
+    width: 100%;
+  }
+
+  .flex-paragraph {
+    text-align: center;
+    width: 100vw;
+    padding: 8px;
+  }
+
+  .flex-item {
+    padding: 8px;
+  }
+
+  .imageflex {
+    width: 100vw;
+  }
+
+  .imageflexlrg {
+    width: 100vw;
+    height: auto;
+  }
+
+  .researchhero {
+    height: auto;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  /* paragraph */
+  .p50rem {
+    width: 100vw;
+  }
+  .wordbackground {
+    background-color: white;
+    padding: 40px;
+    width: 100vw;
+    height: auto;
+    box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  h3 {
+    padding: 5px;
+  }
+  h2 {
+    padding: 5px;
+  }
+  .featurelist {
+    display: none;
+  }
+
+  /* Next steps */
+
+  .Nextsteps {
+    display: none;
+  }
+
+  /*app logo */
+
+  .APPLOGO {
+    display: none;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+  /* line */
+
+  .line {
+    transform: translate(-20%, -20%);
+    width: 100vw;
+    margin: auto;
+    height: 10px;
+    background: #d8b505;
+    text-align: center;
+    display: none;
+  }
+
+  /* nav */
+
+  .checkbtn {
+    display: block;
+    font-size: 30px;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #900000;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 16px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0000ff;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    line-height: 4rem;
+  }
+
+  /* ---footer----- */
+
+  footer {
+    background-color: #d3b53c;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    width: 100vw;
+  }
+}
+
+/* medium media querie */
+
+@media (max-width: 768px) {
+  label.logo {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  nav ul li a {
+    font-size: 10px;
+  }
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/*--Medium---*/
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  nav ul li a {
+    font-size: 10px;
+  }
+}

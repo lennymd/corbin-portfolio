@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>
+        Corbin Graves - Care error reporting system design
+      </title>
+      <!---link rel="stylesheet" herf="css/main.css"-->
+
+
+            <!-- Bootstrap -->
+            <!-- <link
+              href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+              crossorigin="anonymous"
+            /> -->
+
+            <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+            <link rel="stylesheet" href="style.css" />
+            <link rel="stylesheet" href="style2.css" />
+            <link rel="stylesheet" href="work.style.css">
+            <!-- Being used for icons -->
+            <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+
+            <!-- <script
+              src="https://code.jquery.com/jquery-3.6.0.js"
+              integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+              crossorigin="anonymous"
+            ></script> -->
+            <!-- <script
+              src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+              crossorigin="anonymous"
+            ></script> -->
+            <!-- <script src="script.js"></script> -->
+</head>
+<body>
+  <header>
+    <!-- TODO border-top, border-bottom  for navbar-->
+    <nav id="navbar">
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <!-- TODO get a logo on the header -->
+      <!-- <label class="logo"></label> -->
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="navbar-vertical-space">|</li>
+        <li><a href="work.html">Work</a></li>
+        <li class="navbar-vertical-space">|</li>
+        <li><a href="https://corbingraves.github.io/Resume/">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero image -->
+  <div class="hero-image-care">
+    <div class="hero-text">
+    <h1>Care</h1>
+    <p>Care for patients and practitioners alike.</p>
+      <p> Web application|Desktop|User dashboard</p>
+  </div>
+  </div>
+
+
+
+<p class="role">Roles: UX researcher / UI designer</p>
+
+  <!-- Clients -->
+  <div class="flex-container clientcare">
+  <div class="wordbackground" style="height: 300px;"><h2>Background</h2> <p>The Care application is an error reporting system for nursing homes and other medical establishments.  CARE allows practitioners and administrators to report incidents that occur, track the trends of incidents that occur, and includes necessary forms for workers' compensation and OSHA 301.
+ </p></div>
+</div>
+<h1 class="below">The Problem:🩺  </h1>
+
+
+<!-- Intro to project -->
+<div class="flex-container">
+<div> <p class="problem featuretext problemfeaturetext">Osha mandates reporting of incidents from regulated industries along with keeping a collection of reported near misses. <br> <br> Incident reporting systems run into problems when designed poorly, making it hard for employees to report and administrators to organize and retrieve important information.  More traditional reporting relies on a narrative form of writing, leading to insufficient or inaccurate data gathering. It can be too time-consuming. <br> <br>There is limited opportunity to conduct quantitative analyses for quality improvement. Physical forms can be hard to find and turn into the appropriate managers. </p>
+  <br>
+  <br>
+
+  <h3>Users</h3>
+  <ol>
+    <li>Certified Nurse Aides (CNA),</li>
+    <li>Certified Medical Aides (CMA),</li>
+    <li>Licensed Vocational Nurses (LVN),</li>
+    <li>Assistant Director of Nursing (ADON),</li>
+    <li>Director of Nursing (DON), Administrators.</li>
+  </ol>
+
+
+
+</div>
+<img class="researchhero" src="https://lh3.googleusercontent.com/de-4mE5ZTmLIlxnDZzJiyLyKbt8P9C4JcpQekTh_is2ispm-LtAojnMK3cDJyeE_ahU1fktxiSQQy7P68XyupQIjeAflPHAt-IiCgsxnUxMN8IfmPuAGNzasUSObTVKJAyEuWP88bIA=w2400" alt="image that says “Reporting systems have the potential to serve two important functions. They can hold providers accountable for performance or, alternatively, they can provide information that leads to improved safety. ”
+">
+
+</div>
+
+
+
+<!-- Opportunity Statement-->
+<div class="flex-container">
+<div class="wordbackground3"><h2>Opportunity Statement</h2> <p>
+  Design and prototype a web-based incident reporting system for a nursing home setting. An Incident-reporting system is a method of reporting "near misses" or "adverse" events to enable organizational improvement. The error reporting system design is for a nursing home setting. Must allow Report submission and analysis of data.
+<!-- <ol class="unorderlist">
+  <li>How to design an error reporting system that is easy to use
+  </li>
+  <br>
+  <li>
+  Make documenting and reviewing OSHA documents and other incident-related forms quick and easy
+  </li>
+    <br>
+  <li>
+    How to make submitting incident-related documents easy
+  </li>
+</ol> -->
+
+</p></div>
+</div>
+<div class="line"></div>
+<hr>
+<h1 class="below" >Research Stage:🔎</h1>
+
+
+<!-- Research Stage-->
+<div class="flex-container">
+  <div class="featuretext problemfeaturetext">
+      <h2>Research Methods</h2>
+        <p class="problem featuretext flex-paragraph" > The research team had already researched reporting systems in the medical industry, and I had access to it. The research was invaluable in understanding what types of requirements there are for reporting incidents in a professional setting. <br><br>I started by researching the role of OSHA, Employee rights, and requirements for reporting incidents. This research helped me to understand better what my web application needed to do for its users.
+         </p>
+   </div>
+
+<!-- slideshow -->
+
+
+
+<div class="w3-content w3-display-container ">
+  <img class="mySlides" src="https://lh3.googleusercontent.com/yiQSXJv3sxlp0Mdo2OcZZ7ahKTj74j_aDsd-2Y_wsHVFSS4UYoF1hvUoA4eXDhGylq_N0uTFbW8wVXX0ca-9gPe_gPsdNDniU-eNz9boMgt6Hqk1ErbQ-840yFRK8ydY72XKKLb_Www=w2400" style="width:100%" alt="slideshow image">
+
+  <img class="mySlides" src="https://lh3.googleusercontent.com/_ndeIqLLZ6Bq32TBDISnACRQ7K9-fEKXFOxDc2Blr4WsbG29nS247PvBBFPmuqtiYwLwT1HH9rZvb0Lmy7xwZXYSz48vYhGGEJQMBDlK4SlV2ARpdfCuET4bwqsGF-vebfxm3tKkXwc=w2400" style="width:100%" alt="slideshow image">
+
+  <img class="mySlides" src="https://lh3.googleusercontent.com/aAQVq1jp3GcHPZYYPKx1cV_3NnI5ml7enWvv018iKkIA8EgasJdIds8WNV29j_ZE5Itrk-YpMsLwYzBArd3g2bkCdkyQhV2DYg_KyEKLv7YHl1pdgoUwBkMs0Dsv_YMXuvzHiGDNKP0=w2400" style="width:100%" alt="slideshow image">
+
+  <img class="mySlides" src="https://lh3.googleusercontent.com/giALgyWqPo5LU807UxrKU2HPuAOjhGUOrccCzig_SOqh7bhnWm6iWH-_mYa2Ez8HTgU_dlHJwWwZj9B9BV6owJmcToRZJu2LlnUGbhRlA9kQGbM2qoVbq9LYGHd1T42otBer-mq-RNg=w2400" style="width:100%" alt="slideshow image">
+
+  <img class="mySlides" src="https://lh3.googleusercontent.com/_pIyJWrlJbjN7dg8pkpMqQ07JPInQwqWA0cA4RI2xCWnPF9OYbLYTC3Iy05KvUjaUYppMQA7MAQxLIWBTC1rQLyufRA9EiLz8RNfPqyeW-w87GxZkJ5OiViQUjk9UXKshypXtHN2avY=w2400" style="width:100%" alt="slideshow image">
+
+  <img class="mySlides" src="https://lh3.googleusercontent.com/i9Hrl_yUnrufe34j7BJm_4baEWxxuideNRxWuuJtZisidknCIqG-GJv3ICRM4S7WNDE2lRt4hRxchGcrP0UdgTheznfWl1Gn9ZdpRalxh_eH4WpN2JWztaz0JrscjwWYRURLPZwqv0I=w2400" style="width:100%" alt="slideshow image">
+
+  <img class="mySlides" src="https://lh3.googleusercontent.com/-_IXPrxqtucXzHiStHmWKCcdf2BqakKQTtk6QW4Aj6lhm1DhbTNhsGA9A0fUw36K0egYdLCVwDkjpGTJOu7oSTbNAPcaNf-i1hrmuAHSveuc6J-P0h-uWTQ9aqZ02cFZutnR7ROCS5I=w2400" style="width:100%" alt="slideshow image">
+
+  <img class="mySlides" src="https://lh3.googleusercontent.com/iEYlCBdwUPew3W71S9qX1NixNZ60_H-8KJMXfRn6W2o4g1ewNk_OEcMC6zcUeTuBMcXIry85jCI9zs7bPcd_hrronZFppPUVXj_-y8ugP2vDhawv_VK26gyV2HvyhZ8rNrC4I_3_q-M=w2400" style="width:100%" alt="slideshow image">
+
+  <img class="mySlides" src="https://lh3.googleusercontent.com/fesPDEhamabls9wnMvIsptQtQynRBA3TiQtMX1hUYFo2zM5bULJ9nY3Dt5lSSSGoKncjNhQmcB_oXMcZ2jvnop7xDBNeWGuKX6ootMr6cXPN9m7gE_qXOeDl3qVcw5cjwNFz8FgXC98=w2400" style="width:100%" alt="slideshow image">
+
+  <img class="mySlides" src="https://lh3.googleusercontent.com/7EX0gY2MCzrJUvwDUe99WWAFhn-Z7cYpAWBGkjEE_Mopd03570rH4r9aTRtutbcB8yMRbtbBQHqOl3Nc7Q5I4jJ-_Z3-jhurYPpktRYvNqbB-_tAiLFx7JORwOUwBL_FSMTMQLdBfds=w2400" style="width:100%" alt="slideshow image">
+
+  <img class="mySlides" src="https://lh3.googleusercontent.com/OI35ZpHsUIJn0hnaOtYStnUpRczpePLi3aAR8TnuCjNUjVCn5NCFq4GrBgKwelq-R-dV-DASL-KDX_OZuzlc59aUnPBSbc59fj1mlf3trqO-nF3jb2O7YwcS81w9xqBzVSIEtLcvlBc=w2400" style="width:100%" alt="slideshow image">
+
+  <img class="mySlides" src="https://lh3.googleusercontent.com/lWULcegUiwLW_h6hLwKXPbL5vIv0P1klYE-PmbAg8Km50ATNjqE8qjHz7JCzlTQdQhYDRl367yFnq6Rkqafm7t9wOLmNLeUWcr_WtSTumDXyyU4TZUt7Mx3dVW7yXLa82XMgh_iv5xc=w2400" style="width:100%" alt="slideshow image">
+
+  <img class="mySlides" src="https://lh3.googleusercontent.com/BA8AsPJCby6jZSDpx-oUg_kzWD73wbIk9tAUfxg4okxQVAiuINb4GvEGPoHsUWpvYMGPFVW3R3kgBGDsWW97KRLLkhLFGzNc-BscCdvTexjrllTGI4fjECt4n-nfOzuQqCrFn_VCwVE=w2400" style="width:100%" alt="slideshow image">
+
+  <img class="mySlides" src="https://lh3.googleusercontent.com/uxRflaz8CgAndBd1nBL9hRN_lymEdD6kpq0wkm523atD71Z_hki2AGs0ukCKPqHexYxxEykynnGqVoq2wbHClqx8hmogZV0zUEGEgzFodjGo5rbKwAnvd0k3C7lvWRGmX0R51Y8K9i0=w2400" style="width:100%" alt="slideshow image">
+
+  <img class="mySlides" src="https://lh3.googleusercontent.com/KvBE-kr4i17l8uUPXACygjsXvIVHh9UVEF3mRhpSKIcMkkZHNd4Ae-eB85DhBaN-YAx1BKBuzttwHekBN3naMz58tMmQ0vD6oJYHAVNWGzIEuuEAyz05scNGnzfE86WuU6EtcHmorYY=w2400" style="width:100%" alt="slideshow image">
+
+  <img class="mySlides" src="https://lh3.googleusercontent.com/39tNTSqVKuQbZJyK-qqPHsflYVYdcfjoXLjvupLhFUECFDda13BsquBMhyry8C2mfSLdBfKox6cUg3p7b2A3sEzbslDNZU3Z6-g5c2uRkXKnYSpS41gC7q64vqfVIGsZC_vymuLNzYU=w2400" style="width:100%" alt="slideshow image">
+
+  <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+</div>
+
+
+
+<!-- insights-->
+<div class="flex-container" >
+<div><h2>Key insights:💡</h2>
+  <ul class="unorderlist problemfeaturetext">
+    <li>The app should allow an employee or administrator to complete an illness or injury report.</li>
+    <li>Submitting an injury report will automatically create a case, and the Administrator will have the ability to review those reports and add other forms to them</li>
+    <li>Students would like better indication on whether a space is exceeding the recommended capacity (40/50 still green)</li>
+    <li>If the injury required medical attention or time off, or job transfer, administrators should add these necessary forms to the case documentation</li>
+    <li>The Administrator submits OSHA forms </li>
+
+  </ul>
+
+</div>
+</div>
+<div class="line"></div>
+<hr>
+
+
+
+
+
+<!-- Prorotype-->
+<h1 class="below">Prototype/Design:🎯🎨</h1>
+  <div class="flex-container">
+      <div>
+          <h2>Prorotype</h2>
+            <p class="problem featuretext problemfeaturetext">During the prototyping phase, I used to research and Web Content Accessibility Guidelines AAA standards to decide on features and design prototypes. "CARE" is a web-based incident reporting system. Provides  user specific interface for Report Submission and Analysis.</p>
+              <a href="https://www.figma.com/proto/qjGWuf9Z5GTYhO4QvrJdLG/Prototype?node-id=8%3A691&scaling=scale-down&page-id=0%3A1" class="btn effect04" data-sm-link-text="CLICK ME" target="_blank"><span>Prorotype</span></a>
+      </div>
+    <img class="researchhero imageprotoype" src="https://lh3.googleusercontent.com/CsvAC6Goc5AI1p0olQ3B8p45cvcre7Z5BL-MlSscY79-DRykigqct1fYYWqpWL4Kl3kncY-pdLzqgJLS8bRvTSBAA7HBdGX87yoBYy-wtpZLZaiUA7wFIquMK3N47oAdrf_Wp4XNmZc=w2400" alt="">
+  </div>
+
+
+
+
+<!-- design Stage-->
+<div class="flex-container">
+    <div>
+      <h2>Design</h2>
+        <h3>Colors:🖍️</h3>
+        <p class="problem featuretext problemfeaturetext">The research team had already researched reporting systems in the medical industry, and I had access to it. The research was invaluable in understanding what types of requirements there are for reporting incidents in a professional setting. <br><br>I started by researching the role of OSHA, Employee rights, and requirements for reporting incidents. This research helped me to understand better what my web application needed to do for its users.</p>
+    </div>
+   <img class="researchhero" src="https://lh3.googleusercontent.com/J-_GMvG8F3ZsgVNY1iw3tMmIrpL03-ahT41dkP2iI0w-47bE_S8GAGEIgKD73fksyPhWeeG2YnkvGwzzZR15GC5qe90y9s-T85hHSz1U3yjEyfFRqqTGJ4LPBHdz6ud1z3p9i2pygOE=w2400" alt="">
+</div>
+
+<div class="flex-container">
+    <div>
+      <h2>Design</h2>
+        <h3>Button design:💻</h3>
+        <p class="problem featuretext problemfeaturetext">The research team had already researched reporting systems in the medical industry, and I had access to it. The research was invaluable in understanding what types of requirements there are for reporting incidents in a professional setting. <br><br>I started by researching the role of OSHA, Employee rights, and requirements for reporting incidents. This research helped me to understand better what my web application needed to do for its users.</p>
+    </div>
+   <img class="researchhero " src="https://lh3.googleusercontent.com/NPyZt5V8U1mtrMNobpinQDMv_9CbugswMzApbekz9Deta7I2C65SRNAFcGA1gkyByixJ6HTR3K0CqJnFYrx_vMNgrH1rf2n808t609-defRVq6RYRhOQg5D49yXNcKcN49PjDcYEdj0=w2400" alt="">
+</div>
+
+
+
+<div class="line"></div>
+<hr>
+<!-- Features list -->
+<h1 class="below">Features/Task:✔️</h1> <br><br>
+
+
+
+<ul class="unorderlist features" style="height: 300px;">
+  <h2>Features and functions</h2><p>
+    The Care application allows users to review reports, create new reports, submit reports, edit open (in-progress) reports, add case important documents, populate OSHA/Workers Comp forms.
+
+All of this, along with a dashboard displaying important data needed to make an administers job of incident managing streamlined and easy.
+
+</ul>
+
+<br>
+<br>
+<img  class="slideimages2" src="https://lh3.googleusercontent.com/qXFqb7G_NEsQnkLTf1GEB-0rQMojxtKAyUq0qjXe08aLlB9gOSgmoN_c4pz4JVIjg97uhHr2VLiGixEQKcYPHcNfB9X6Wb2tQOSAG9T3MqLZ3k3DTvx1kbUFL-jIg207RSfDPiNOwV0=w2400" alt="user task list includes: Search for PPE/sanitation stations,
+Select your campus, Submit a positive/negative test, Change notification settings
+, Search for a testing site near me, Check current distance from other people using AR.
+">
+
+<!-- features -->
+
+
+
+
+
+<div class="flex-container ">
+<div class="featuretext" style="align="Left"" ><h2>UserTask#1:</h2><h3>Review Submitted incident.</h3><br> <p class="flex-paragraph">Based on the University of Miami's decision to place PPE stations around the campuses, I have added a feature to allow students to locate these stations quickly from anywhere on campus. <br><br> The responses from student interviewees influenced this feature. Students did not know where to find the PPE locations. </p></div>
+<div>
+<iframe src="https://giphy.com/embed/Kln2BIQjC1pSZaaiJh" width="480" height="304" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+</div>
+</div>
+
+<!-- feature 2 -->
+
+<div class="flex-container">
+<iframe src="https://giphy.com/embed/MxCcunzwQYkY7h7Txh" width="480" height="304" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<div class="featuretext" style="align="Left"" >
+<h2>UserTask#2 :</h2><h3>Check completed cases.
+</h3><br> <p class="flex-paragraph">The University of Miami has three different campuses the Coral Gables campus, the Marine Biology campus, and the Medical Campus. <br><br> Allowing users to select between campuses give them the necessary information about PPE/Sanitation stations, building capacity, and testing site locations related to their campus of choice.</p></div>
+<div></div>
+</div>
+
+
+
+<!-- feature 3-->
+
+<div class="flex-container">
+<div class="featuretext" style="align="Left"" ><h2>UserTask#3:</h2><h3>Find incident summary report.</h3> <p class="flex-paragraph">To ensure a safe return to campus, all people coming on to campus must complete a symptom checker survey. <br><br> By incorporating this feature into the "Safeguard" app, users will have one location for all safety-related tasks for their time on campus.</p></div>
+<div>
+  <iframe src="https://giphy.com/embed/wjo1UWjcYZj7nlrhqp" width="480" height="408" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+</div>
+
+<div></div>
+</div>
+
+<!-- feature 4-->
+
+<div class="flex-container">
+
+<div>
+  <iframe src="https://giphy.com/embed/0EEQXb5DNcNPpv37DD" width="480" height="302" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+</div>
+<div class="featuretext" style="align="Left"" ><h2>UserTask#4:</h2><h3>Find injury trends.
+</h3> <p class="flex-paragraph">Giving users a choice to turn off notification settings allows users to interact with the application on their terms, ultimately increasing user enjoyment of the app and is standard practice for applications.</p></div>
+<div></div>
+</div>
+
+<!-- feature 5-->
+
+<div class="flex-container">
+<div class="featuretext" style="align="Left"" ><h2>UserTask#5:</h2><h3> Creating a new report/Add a form to preexisting cases.</h3> <p class="flex-paragraph">Like the PPE/ Sanitation station location feature, the testing site locator feature allows users to find an on-campus testing site. </p></div>
+<div>
+    <iframe src="https://giphy.com/embed/dyKVQLzpzkzomNDajn" width="480" height="304" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+  <iframe src="https://giphy.com/embed/XEfn6hasF9V02DDcgC" width="272" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+</div>
+
+<div></div>
+</div>
+
+
+<!--Next steps-->
+<div class="flex-container clientcare">
+<div><h2>Next steps:➡️</h2>
+  <p class="unorderlist features">Continue user testing and reiterating the prototype. We will also begin testing information architecture to understand better the needs of nursing home administrators. Start designing employee portal and start user tests. </p>
+
+
+</div>
+</div>
+<br>
+<br>
+<br>
+<div class="line"></div>
+<br>
+<div class="pagination">
+  <a href="safeguard.html">&laquo;</a>
+<a href="inturo.html">1</a>
+<a href="safeguard.html">2</a>
+<a href="care.html" class="active">3</a>
+<a href="inturo.html">&raquo;</a>
+</div>
+<!--
+          </script>
+<df-messenger chat-icon="https:&#x2F;&#x2F;storage.googleapis.com&#x2F;cloudprod-apiai&#x2F;59e2aeb6-28f6-43d1-9d40-987b1e272605_x.png" intent="WELCOME" chat-title="Inturo" agent-id="84f24230-d87a-4c1b-aacc-f3b15a1feb0a" language-code="en"></df-messenger>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+  navbar.classList.add("sticky")
+} else {
+  navbar.classList.remove("sticky");
+}
+}
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script> -->
+
+</body>
+<footer>
+    <li>corbingraves90@gmail.com,</li>
+      <li>  336-963-1793</li>
+</footer>
+
+</html>
